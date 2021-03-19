@@ -34,7 +34,7 @@ local len = string.len
 local lower = string.lower
 local sub = string.sub
 
-return function(str1, str2)
+local function LevenshteinDistance(str1, str2)
 	str1 = lower(str1)
 	str2 = lower(str2)
 	local len1 = len(str1)
@@ -58,3 +58,5 @@ return function(str1, str2)
 
 	return array[len1][len2]
 end
+
+return LevenshteinDistance
