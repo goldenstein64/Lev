@@ -30,18 +30,6 @@ function LevenshteinDistance(char s[1..m], char t[1..n]):
 	return d[m, n]
 --]]
 
---[[
-print([=[0 1 2 3 4 5 6
-1 1 2 3 4 5 6
-2 2 1 2 3 4 5
-3 3 2 1 2 3 4
-4 4 3 2 1 2 3
-5 5 4 3 2 2 3
-6 6 5 4 3 3 2
-7 7 6 5 4 4 3
-3]=])
---]]
-
 local len = string.len
 local lower = string.lower
 local sub = string.sub
