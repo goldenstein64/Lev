@@ -1,0 +1,21 @@
+{
+    "name": "Lev",
+    "tree": {
+        "$className": "DataModel",
+
+        "Workspace": {
+            "$className": "Workspace",
+
+            "LevTest": {
+                "$className": "Folder",
+
+                "Tester": {
+                    "$path": "test"
+                },
+                "Lev": {
+                    "$path": "src"
+                }   
+            }
+        }
+    }
+}

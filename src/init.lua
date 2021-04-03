@@ -50,11 +50,7 @@ local function LevenshteinDistance(str1, str2)
 		for j = 1, len2 do
 			local cost = sub(str1, i, i) == sub(str2, j, j) and 0 or 1
 
-			matrix[i][j] = math.min(
-				matrix[i - 1][j] + 1,
-				matrix[i][j - 1] + 1,
-				matrix[i - 1][j - 1] + cost
-			)
+			matrix[i][j] = math.min(matrix[i - 1][j] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j - 1] + cost)
 		end
 	end
 
